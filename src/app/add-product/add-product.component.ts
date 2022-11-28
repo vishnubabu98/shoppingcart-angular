@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AddProductComponent {
 
+  Producttitle=""
+  image=""
+  Description=""
+  Rate=""
+  Sellername=""
+  Quantity=""
+
+  readValue=()=>
+  {
+    let data:any=
+    {
+        "roducttitle":this.Producttitle,
+        "image":this.image,
+        "Description":this.Description,
+        "Rate":this.Rate,
+        "Sellername":this.Sellername,
+        "Quantity":this.Quantity
+    }
+    console.log(data)
+  }
+
+
 }
